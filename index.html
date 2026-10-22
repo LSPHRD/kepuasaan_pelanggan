@@ -2,61 +2,47 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <!-- Judul Tab Browser -->
   <title>Bellagio_Mall</title>
-  <meta name="description" content="Survei Kepuasan Pelanggan">
-  <meta name="theme-color" content="#0b0f19">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <!-- ===================================================================
-       TAG PEMANGGIL FAVICON (MENGARAH LANGSUNG KE favicon.ico)
-       Parameter ?v=3 memotong cache peramban agar icon langsung tampil
-       =================================================================== -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico?v=3">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=3">
-  <link rel="apple-touch-icon" href="/favicon.ico?v=3">
+  <!-- Favicon & Web Manifest Lengkap -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="shortcut icon" href="/favicon.ico">
 
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      -webkit-tap-highlight-color: transparent;
     }
-
     html, body {
       width: 100%;
       height: 100%;
       overflow: hidden;
-      background-color: #0b0f19; /* Latar belakang gelap agar tidak silau saat transisi */
+      background-color: #0d1117;
     }
-
-    .main-iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+    iframe {
       border: 0;
-      outline: none;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
       display: block;
-      background-color: #ffffff;
     }
   </style>
 </head>
 <body>
 
-  <!-- Iframe langsung terbuka penuh tanpa layar pembuka / preloader / HUD -->
+  <!-- Iframe Aplikasi Google Apps Script Langsung Penuh -->
   <iframe 
-    id="appIframe" 
-    class="main-iframe"
     src="https://script.google.com/macros/s/AKfycbxh28yGEMIrKfyOCLlyHQi3OXnk3S38T7cfJ5ewnq_RJj4sx0sTSXu0s5x7w4Bs7LR6/exec"
-    allow="camera; microphone; geolocation; clipboard-read; clipboard-write; fullscreen; autoplay; payment"
-    sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-downloads"
-    loading="eager"
-    title="Bellagio_Mall">
+    title="Bellagio_Mall"
+    allow="accelerometer; autoplay; camera; clipboard-write; encrypted-media; geolocation; gyroscope; microphone"
+    allowfullscreen>
   </iframe>
 
 </body>
